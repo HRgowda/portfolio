@@ -24,6 +24,14 @@ export function Project() {
       image: "/tapngo.png"
     },
     {
+      title: "TaskForge",
+      description: "A full-stack application automating the bounty distribution process for GitHub issues. Users can submit bounty details, and the application validates and sends the bounty directly to the recipient without requiring manual intervention.",
+      tech: ["NextJs", "TypeScript", "Express Js", "Tailwind CSS", "Shadcn", "PostgresSQL + Prisma", "Kafka"],
+      link: "#",
+      github: process.env.NEXT_PUBLIC_TASKFORGE_GITHUB,  
+      image: "/taskforge.png"
+    },
+    {
       title: "RepoSphere",
       description: "A full-stack GitHub SAAS application enabling users to log in, integrate repositories, view summaries of the latest commits, and interact with an AI assistant to answer repository-related questions.",
       tech: ["NextJs", "Typescript", "Tailwind CSS", "Shadcn", "PostgreSQL + Prisma", "Clerk Auth", "tRPC"],
@@ -31,14 +39,6 @@ export function Project() {
       github: process.env.NEXT_PUBLIC_REPOSPHERE_GITHUB,  
       image: "/repo.png"
     },
-    {
-      title: "TaskForge",
-      description: "A full-stack application automating the bounty distribution process for GitHub issues. Users can submit bounty details, and the application validates and sends the bounty directly to the recipient without requiring manual intervention.",
-      tech: ["NextJs", "TypeScript", "Express Js", "Tailwind CSS", "Shadcn", "PostgresSQL + Prisma", "Kafka"],
-      link: "#",
-      github: process.env.NEXT_PUBLIC_TASKFORGE_GITHUB,  
-      image: "/taskforge.png"
-    }
   ];
 
   return (
