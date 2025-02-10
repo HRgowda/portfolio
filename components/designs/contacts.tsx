@@ -32,7 +32,6 @@ export function Contacts() {
     },
   ];
 
-  // Extract email, phone number, and location from environment variables
   const contactDetails: ContactDetails = {
     email: process.env.NEXT_PUBLIC_EMAIL || "your.email@example.com",
     phone: process.env.NEXT_PUBLIC_PHONE || "+91 99999 99999",
@@ -47,14 +46,14 @@ export function Contacts() {
       </h2>
 
       {/* Content Container */}
-      <div className="flex justify-between items-center w-full max-w-5xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-5xl">
         {/* Left Section: Social Links */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center gap-6 w-1/2"
+          className="flex flex-col items-center gap-4 sm:gap-6"
         >
           {socialLinks.map((social) => (
             <a
@@ -63,7 +62,7 @@ export function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="flex items-center gap-4 p-4 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300"
+              className="flex items-center gap-4 p-3 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300"
             >
               {social.icon}
               <span className="text-lg">{social.label}</span>
@@ -77,10 +76,10 @@ export function Contacts() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center gap-6 w-1/2"
+          className="flex flex-col items-center gap-4 sm:gap-6"
         >
           {/* Email */}
-          <div className="flex items-center gap-4 p-4 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
+          <div className="flex items-center gap-4 p-3 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
             <FaEnvelope className="h-6 w-6 text-primary" />
             <a
               href={`mailto:${contactDetails.email}`}
@@ -92,7 +91,7 @@ export function Contacts() {
           </div>
 
           {/* Phone Number */}
-          <div className="flex items-center gap-4 p-4 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
+          <div className="flex items-center gap-4 p-3 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
             <FaPhone className="h-6 w-6 text-primary" />
             <a
               href={`tel:${contactDetails.phone}`}
@@ -104,7 +103,7 @@ export function Contacts() {
           </div>
 
           {/* Location */}
-          <div className="flex items-center gap-4 p-4 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
+          <div className="flex items-center gap-4 p-3 w-full max-w-sm justify-center rounded-lg bg-white/5 hover:bg-primary/10 border border-white/20 hover:border-white/40 backdrop-blur-md text-white transition-transform transform hover:scale-105 shadow-lg hover:shadow-primary/30 duration-300">
             <FaMapMarkerAlt className="h-6 w-6 text-primary" />
             <span className="text-lg">{contactDetails.location}</span>
           </div>

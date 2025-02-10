@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function About() {
   return (
-    <section id="about" className="py-32 px-4 md:px-8 relative overflow-hidden">
+    <section id="about" className="py-28 px-4 md:px-8 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-primary/5 -skew-y-6 transform origin-top-right" />
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />

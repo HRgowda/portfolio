@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
 
-export function scrollToAbout () {
-  const id = document.getElementById("about")
-  if(id) {
+export function scrollToAbout() {
+  const id = document.getElementById("about");
+  if (id) {
     id.scrollIntoView({
-      behavior: "smooth"
-    })
+      behavior: "smooth",
+    });
   }
 }
 
@@ -35,11 +35,11 @@ export function Hero() {
       id="home"
       className="min-h-screen flex items-center justify-center relative px-4 md:px-8 overflow-hidden bg-gradient-to-br from-blue-900 via-black"
     >
-      {/* Python Logo - Left (Top) */}
+      {/* Python Logo - Left (Top) for smaller screens */}
       <motion.img
         src="/python.png"
         alt="Python Logo"
-        className="ml-32 mt-12 absolute left-20 top-20 w-16 h-16 md:w-20 md:h-20 rounded-full"
+        className="ml-8 mt-12 absolute left-0 top-20 w-16 h-16 md:w-18 md:h-18 lg:w-24 lg:h-24 lg:left-20 lg:ml-40 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -51,11 +51,11 @@ export function Hero() {
         }}
       />
 
-      {/* React Logo - Left (Bottom) */}
+      {/* React Logo - Left (Bottom) for smaller screens */}
       <motion.img
         src="/react.png"
         alt="React Logo"
-        className="ml-32 mb-20 absolute left-20 bottom-20 w-16 h-16 md:w-20 md:h-20 rounded-full"
+        className="ml-8 mb-20 absolute left-0 bottom-16 w-16 h-16 md:w-18 md:h-18 lg:w-24 lg:h-24 lg:left-20 lg:ml-40 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -138,29 +138,29 @@ export function Hero() {
           className="pt-4 flex flex-col sm:flex-row gap-6 justify-center"
         >
           <Link
-            href="/resume.pdf" 
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center px-6 py-3 text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
             Download Resume
-            <FiArrowDown className="ml-2 text-2xl" />
+            <FiArrowDown className="ml-2 text-xl sm:text-2xl" />
           </Link>
 
           <Link
             href="#projects"
-            className="px-6 py-3 text-lg font-semibold rounded-full border border-gray-300/20 text-white hover:shadow-white shadow-sm backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
+            className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg font-semibold rounded-full border border-gray-300/20 text-white hover:shadow-white shadow-sm backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
           >
             View My Work
           </Link>
         </motion.div>
       </div>
 
-      {/* AWS Logo - Right (Top) */}
+      {/* AWS Logo - Right (Top) for smaller screens */}
       <motion.img
         src="/aws.png"
         alt="AWS Logo"
-        className="mr-32 mt-12 absolute right-20 top-20 w-16 h-16 md:w-20 md:h-20 rounded-lg"
+        className="mr-8 mt-12 absolute right-0 top-20 w-16 h-16 md:w-18 md:h-18 lg:w-24 lg:h-24 lg:mr-40 lg:right-20 rounded-lg md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -171,12 +171,12 @@ export function Hero() {
           ease: "easeInOut",
         }}
       />
-      
-      {/* TypeScript Logo - Right (Bottom) */}
+
+      {/* TypeScript Logo - Right (Bottom) for smaller screens */}
       <motion.img
         src="/ts.png"
         alt="TypeScript Logo"
-        className="mr-32 mb-20 absolute right-20 bottom-24 w-16 h-16 md:w-20 md:h-20 rounded-full"
+        className="mr-8 mb-20 absolute right-0 bottom-16 w-16 h-16 md:w-18 md:h-18 lg:w-24 lg:h-24 lg:mr-40 lg:right-20 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -190,19 +190,21 @@ export function Hero() {
 
       {/* Bouncing Arrow at the Bottom */}
       <motion.div
-          animate={{
-            y: [0, 10, 0], // Bouncing effect
-          }}
-          transition={{
-            duration: 2.5,
-            repeat: Infinity,
-            repeatType: 'mirror',
-            ease: 'easeInOut',
-          }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-3xl cursor-pointer" onClick={scrollToAbout}
-        >
-          <FiArrowDown />
-        </motion.div>
+        animate={{
+          y: [0, 10, 0], // Bouncing effect
+        }}
+        transition={{
+          duration: 2.5,
+          repeat: Infinity,
+          repeatType: "mirror",
+          ease: "easeInOut",
+        }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-3xl cursor-pointer mb-24 lg:mb-28 xl:mb-10"
+        onClick={scrollToAbout}
+      >
+        <FiArrowDown />
+        
+      </motion.div>
     </section>
   );
 }

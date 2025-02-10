@@ -95,7 +95,7 @@ const scrollToProject = (): void => {
 export function Skills() {
   return (
     <section id="skills" className="max-w-6xl mx-auto shadow-xl rounded-2xl overflow-hidden p-6 bg-black">
-      <h2 className="mt-24 text-4xl font-bold text-white text-center mb-8">My Skills</h2>
+      <h2 className="mt-4 text-4xl font-bold text-white text-center mb-2">My Skills</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {/* First Row: Languages and Frontend */}
