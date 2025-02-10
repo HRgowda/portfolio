@@ -21,7 +21,7 @@ export function About() {
         <h2 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
           About Me
         </h2>
-        <Card className="text-white/80 p-8 backdrop-blur-sm bg-white/5 border-white/10 hover:border-white/20 transition-colors duration-300 hover:shadow-md hover:shadow-white">
+        <Card className="text-white/80 p-8 backdrop-blur-sm rounded-xl bg-white/5 border-white/10 hover:border-white/20 transition-colors duration-300 hover:shadow-md hover:shadow-white">
           <p className="text-lg text-white leading-relaxed">
             Hi, I’m <strong>Hemanth R</strong>, a passionate <strong className="text-green-400 font-medium">Full Stack Developer</strong> and a pre-final-year student pursuing <strong>B.E. in Information Science and Engineering</strong> at <strong>Don Bosco Institute of Technology</strong>.
             I’m actively seeking <u>internship opportunities</u> (remote or on-site) to apply and enhance my skills.
@@ -32,7 +32,7 @@ export function About() {
               TapNGo 
             </Link>
              (a secure financial app) and 
-            <Link href="" className="text-green-400"> TaskFoge</Link>  (automate bounty distribution for GitHub issues.)
+            <Link href="https://taskforge.hemanthr.tech" className="text-green-400"> TaskFoge</Link>  (automate bounty distribution for GitHub issues.)
             <Link href="" className="text-green-400"> RepoSphere</Link> (an AI-powered SaaS solution for GitHub optimization).
           </p>
           <Separator className="my-6 bg-white/10" />

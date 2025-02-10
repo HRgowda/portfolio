@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "@/components/designs/about";
+import { Achievements } from "@/components/designs/achievements";
 import { Contacts } from "@/components/designs/contacts";
 import { Education } from "@/components/designs/education";
 import { Header } from "@/components/designs/header";
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Skills></Skills>
         <Project></Project>
+        <Achievements></Achievements>
         <Education></Education>
         <Contacts></Contacts>
       </div>

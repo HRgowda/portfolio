@@ -73,7 +73,7 @@ export function Hero() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-extrabold text-white tracking-wide"
+          className="text-2xl md:text-4xl lg:text-6xl font-extrabold text-white tracking-wide"
         >
           Hello, I’m <span className="mb-12">Hemanth R</span>
         </motion.h1>

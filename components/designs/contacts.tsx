@@ -15,11 +15,11 @@ interface ContactDetails {
 
 export function Contacts() {
   const socialLinks: SocialLink[] = [
-    {
-      icon: <FaGithub className="h-6 w-6" />,
-      href: process.env.NEXT_PUBLIC_GITHUB_URL || "",
-      label: "GitHub",
-    },
+    // {
+    //   icon: <FaGithub className="h-6 w-6" />,
+    //   href: process.env.NEXT_PUBLIC_GITHUB_URL || "",
+    //   label: "GitHub",
+    // },
     {
       icon: <FaLinkedin className="h-6 w-6" />,
       href: process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com",
@@ -42,7 +42,7 @@ export function Contacts() {
     <section id="contact" className="flex flex-col justify-center items-center py-20 px-4 text-white">
       {/* Heading */}
       <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
-        Let's Connect
+        Contact Me
       </h2>
 
       {/* Content Container */}
