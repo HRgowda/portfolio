@@ -39,7 +39,7 @@ export function Hero() {
       <motion.img
         src="/python.png"
         alt="Python Logo"
-        className="ml-8 mt-12 absolute left-0 top-20 w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:left-20 lg:ml-40 rounded-full md:block"
+        className="ml-8 mt-12 absolute left-0 top-12 w-10 h-10 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:left-20 lg:ml-40 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -55,7 +55,7 @@ export function Hero() {
       <motion.img
         src="/react.png"
         alt="React Logo"
-        className="ml-8 mb-20 absolute left-0 bottom-16 w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:left-20 lg:ml-40 rounded-full md:block"
+        className="ml-8 mb-20 absolute left-0 bottom-12 w-10 h-10 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:left-20 lg:ml-40 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -160,7 +160,7 @@ export function Hero() {
       <motion.img
         src="/aws.png"
         alt="AWS Logo"
-        className="mr-8 mt-12 absolute right-0 top-20 w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:mr-40 lg:right-20 rounded-lg md:block"
+        className="mr-8 mt-12 absolute right-0 top-12 w-10 h-10 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:mr-40 lg:right-20 rounded-lg md:block"
         animate={{
           y: [0, 20, 0],
         }}
@@ -176,7 +176,7 @@ export function Hero() {
       <motion.img
         src="/ts.png"
         alt="TypeScript Logo"
-        className="mr-8 mb-20 absolute right-0 bottom-16 w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:mr-40 lg:right-20 rounded-full md:block"
+        className="mr-8 mb-20 absolute right-0 bottom-12 w-10 h-10 md:w-18 md:h-18 lg:w-20 lg:h-20 lg:mr-40 lg:right-20 rounded-full md:block"
         animate={{
           y: [0, 20, 0],
         }}
