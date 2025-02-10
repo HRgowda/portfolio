@@ -27,7 +27,7 @@ export function Project() {
       title: "TaskForge",
       description: "A full-stack application automating the bounty distribution process for GitHub issues. Users can submit bounty details, and the application validates and sends the bounty directly to the recipient without requiring manual intervention.",
       tech: ["NextJs", "TypeScript", "Express Js", "Tailwind CSS", "Shadcn", "PostgresSQL + Prisma", "Kafka"],
-      link: "#",
+      link: process.env.NEXT_PUBLIC_TASKFORGE_URL,
       github: process.env.NEXT_PUBLIC_TASKFORGE_GITHUB,  
       image: "/taskforge.png"
     },
@@ -38,6 +38,14 @@ export function Project() {
       link: "#",
       github: process.env.NEXT_PUBLIC_REPOSPHERE_GITHUB,  
       image: "/repo.png"
+    },
+    {
+      title: "MindCraft",
+      description: "A full-stack blogging platform designed for seamless content creation, sharing, and discovery. Empowering writers to connect and engage with their audience effortlessly.",
+      tech: ["React", "Cloudflare workers", "Typescript", "Tailwind CSS", "PostgreSQL + Prisma", "Zod", "JWT"],
+      link: process.env.NEXT_PUBLIC_MINDCRAFT_URl,
+      github: process.env.NEXT_PUBLIC_MINDCRAFT_GITHUB,  
+      image: "/mindcraft.png"
     },
   ];
 
