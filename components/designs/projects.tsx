@@ -35,9 +35,9 @@ export function Project() {
       title: "RepoSphere",
       description: "A full-stack GitHub SAAS application enabling users to log in, integrate repositories, view summaries of the latest commits, and interact with an AI assistant to answer repository-related questions.",
       tech: ["NextJs", "Typescript", "Tailwind CSS", "Shadcn", "PostgreSQL + Prisma", "Clerk Auth", "tRPC"],
-      link: "#",
+      link: process.env.NEXT_PUBLIC_REPOSPHERE_URl,
       github: process.env.NEXT_PUBLIC_REPOSPHERE_GITHUB,  
-      image: "/repo.png"
+      image: "/reposphere.png"
     },
     {
       title: "MindCraft",

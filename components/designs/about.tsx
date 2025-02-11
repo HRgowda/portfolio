@@ -31,9 +31,9 @@ export function About() {
             My expertise lies in building scalable web applications with a focus on seamless user experiences and efficient backend operations. I’ve also incorporated <strong className="text-green-400 font-medium">DevOps practices</strong> into major projects to streamline workflows. Some of my notable projects include <Link href="https://tapngo-userapp.hemanthr.tech" target="_blank" className="text-green-400 cursor-pointer">
               TapNGo 
             </Link>
-             (a secure financial app) and 
-            <Link href="https://taskforge.hemanthr.tech" className="text-green-400"> TaskFoge</Link>  (automate bounty distribution for GitHub issues.)
-            <Link href="" className="text-green-400"> RepoSphere</Link> (an AI-powered SaaS solution for GitHub optimization).
+             (a secure financial app), 
+            <Link href="https://taskforge.hemanthr.tech" target="_blank" className="text-green-400"> TaskFoge</Link>  (automate bounty distribution for GitHub issues.)
+            <Link href="https://reposphere.hemanthr.tech" target="_blank" className="text-green-400"> RepoSphere</Link> (an AI-powered SaaS solution for GitHub optimization).
           </p>
           <Separator className="my-6 bg-white/10" />
           <p className="text-lg text-white leading-relaxed">
