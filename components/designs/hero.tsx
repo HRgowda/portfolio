@@ -138,7 +138,7 @@ export function Hero() {
           className="pt-4 flex flex-col sm:flex-row gap-6 justify-center"
         >
           <Link
-            href="/resume.pdf"
+            href="/Hemanth_R.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
