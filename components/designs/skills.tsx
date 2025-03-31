@@ -20,12 +20,10 @@ const skillsData: SkillCategory[] = [
   {
     category: 'Languages',
     skills: [
-      { name: 'C', icon: <FiCode className="text-blue-500" /> },
       { name: 'Python', icon: <img src="/python.png" alt="Python" className="w-4 h-4" /> },
-      { name: 'Java', icon: <FaJava className="text-orange-600" /> },
       { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-400" /> },
       { name: 'TypeScript', icon: <SiTypescript className="text-blue-400" /> },
-      { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
+      { name: 'Java', icon: <FaJava className="text-orange-600" /> },
     ],
   },
   {
@@ -35,7 +33,6 @@ const skillsData: SkillCategory[] = [
       { name: 'Next.js', icon: <SiNextdotjs className="text-gray-900" /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-400" /> },
       { name: 'ShadCN', icon: <FiCodepen className="text-green-500" /> },
-      { name: 'React Router DOM', icon: <FiCode className="text-indigo-500" /> },
     ],
   },
   {
@@ -44,7 +41,6 @@ const skillsData: SkillCategory[] = [
       { name: 'Node.js', icon: <FaNode className="text-green-600" /> },
       { name: 'Express', icon: <img src="/express.png" alt="Express" className="w-4 h-4" /> },
       { name: 'Kafka', icon: <img src="/kafka.png" alt="Kafka" className="w-6 h-6" /> },
-      { name: 'Hono', icon: <FiCodepen className="text-purple-500" /> },
       { name: 'Zod', icon: <FiCode className="text-blue-600" /> },
       { name: 'JWT', icon: <FiCloud className="text-blue-400" /> },
     ],
@@ -64,10 +60,7 @@ const skillsData: SkillCategory[] = [
       { name: 'Linux', icon: <img src="/linux.png" alt="Linux" className="w-4 h-4" /> },
       { name: 'CI/CD', icon: <FiGitBranch className="text-purple-400" /> },
       { name: 'Docker', icon: <FaDocker className="text-blue-500" /> },
-      { name: 'Kubernetes', icon: <SiKubernetes className="text-blue-500" /> },
       { name: 'AWS', icon: <FaAws className="text-yellow-500" /> },
-      { name: 'Prometheus', icon: <img src="/prometheus.png" alt="Prometheus" className="w-4 h-4" /> },
-      { name: 'Grafana', icon: <SiGrafana className="text-orange-500" /> },
       { name: 'Vim', icon: <SiVim className="text-green-500" /> },
     ],
   },
