@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export function Header() {
-  const sections: string[] = ["Home", "About", "Skills", "Projects", "Achievements", "Education", "Contact"];
+  const sections: string[] = ["Home", "About", "Experience", "Skills", "Projects", "Achievements", "Education", "Contact"];
 
   return (
     <header className="fixed top-0 z-50 w-full p-2">

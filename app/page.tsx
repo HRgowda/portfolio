@@ -8,6 +8,7 @@ import { Header } from "@/components/designs/header";
 import { Hero } from "@/components/designs/hero";
 import { Project } from "@/components/designs/projects";
 import { Skills } from "@/components/designs/skills";
+import WorkExperience from "@/components/designs/experience";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Header />
         <Hero />
         <About />
+        <WorkExperience />
         <Skills></Skills>
         <Project></Project>
         <Achievements></Achievements>
