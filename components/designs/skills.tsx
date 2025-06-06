@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { FiCode, FiCodepen, FiDatabase, FiGitBranch, FiCloud, FiArrowDown } from 'react-icons/fi';
-import { FaReact, FaNode, FaJava, FaDocker, FaAws, FaHtml5, FaGithubAlt } from 'react-icons/fa';
+import { FaReact, FaNode, FaJava, FaDocker, FaAws, FaBolt , FaGithubAlt } from 'react-icons/fa';
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, SiPostgresql, SiMongodb, SiGrafana, SiKubernetes, SiVim } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 
@@ -23,7 +23,7 @@ const skillsData: SkillCategory[] = [
       { name: 'Python', icon: <img src="/python.png" alt="Python" className="w-4 h-4" /> },
       { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-400" /> },
       { name: 'TypeScript', icon: <SiTypescript className="text-blue-400" /> },
-      { name: 'Java', icon: <FaJava className="text-orange-600" /> },
+      { name: 'Java (Basics)', icon: <FaJava className="text-orange-600" /> },
     ],
   },
   {
@@ -39,10 +39,9 @@ const skillsData: SkillCategory[] = [
     category: 'Backend',
     skills: [
       { name: 'Node.js', icon: <FaNode className="text-green-600" /> },
+      { name: "Fast API", icon: <FaBolt className='text-green-500' />},
       { name: 'Express', icon: <img src="/express.png" alt="Express" className="w-4 h-4" /> },
-      { name: 'Kafka', icon: <img src="/kafka.png" alt="Kafka" className="w-6 h-6" /> },
-      { name: 'Zod', icon: <FiCode className="text-blue-600" /> },
-      { name: 'JWT', icon: <FiCloud className="text-blue-400" /> },
+      { name: 'Kafka', icon: <img src="/kafka.png" alt="Kafka" className="w-6 h-6" /> }
     ],
   },
   {
@@ -51,7 +50,7 @@ const skillsData: SkillCategory[] = [
       { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600" /> },
       { name: 'MongoDB', icon: <SiMongodb className="text-green-700" /> },
       { name: 'Prisma', icon: <SiPrisma className="text-indigo-500" /> },
-      { name: 'NeonDB', icon: <FiDatabase className="text-gray-600" /> }, 
+      { name: 'SqlAlchemy', icon: <FiDatabase className="text-gray-600" /> }, 
     ],
   },
   {
@@ -88,7 +87,7 @@ const scrollToProject = (): void => {
 export function Skills() {
   return (
     <section id="skills" className="max-w-6xl mx-auto shadow-xl rounded-2xl overflow-hidden p-6 bg-black">
-      <h2 className="mt-4 text-4xl font-bold text-white text-center mb-2">My Skills</h2>
+      <h2 className="mt-8 text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">My Skills</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {/* First Row: Languages and Frontend */}
