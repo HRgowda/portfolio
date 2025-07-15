@@ -22,7 +22,7 @@ const WorkExperience = () => {
             </div>
 
             <div className="text-left sm:text-right">
-              <p className="text-sm font-medium">March 2025 – June 2025</p>
+              <p className="text-sm font-medium">March 2025 – Present</p>
               <p className="text-sm text-white/80">Bengaluru, India</p>
             </div>
           </CardHeader>
@@ -69,8 +69,51 @@ const WorkExperience = () => {
       </div>
     </CardContent>
 
-    </Card>
-    </div>
+        </Card>
+
+        {/* hello */}
+        <Card className="mt-10 p-2 backdrop-blur-sm rounded-xl bg-white/5 border-white/10 hover:border-white/20 transition-colors duration-300 hover:shadow-md hover:shadow-white">
+          <CardHeader className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between p-6">
+            <div className="flex items-start sm:items-center gap-4">
+              <Avatar className="h-12 w-12 rounded-full">
+                <AvatarImage src="/sicLogo.jpeg" alt="Samsung Innovation Campus Logo" />
+                <AvatarFallback>BM</AvatarFallback>
+              </Avatar>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-semibold">Samsung Innovation Campus</h3>
+                <p className="text-base sm:text-lg text-white/80">Coding & Programming Traniee</p>
+              </div>
+            </div>
+
+            <div className="text-left sm:text-right">
+              <p className="text-sm font-medium">Jan 2024 – June 2024</p>
+              <p className="text-sm text-white/80">Bengaluru, India</p>
+            </div>
+          </CardHeader>
+
+          <CardContent className="p-6 pt-0">
+            <div className="space-y-4">
+              <ul className="list-disc pl-5 space-y-2 text-white/80">
+                <li>
+                  Gained hands-on experience with <strong className="text-green-400">Python</strong> by learning it from scratch and applying its core syntax and constructs.
+                </li>
+                <li>
+                  Studied and implemented fundamental <strong className="text-green-400">Object-Oriented Programming (OOP)</strong> principles, which enhanced my ability to design clean, modular, and reusable code structures.
+                </li>
+                <li>
+                  Solved numerous coding problems to strengthen problem-solving and logical thinking skills.
+                </li>
+                <li>
+                  Tackled challenging problems collaboratively through <strong className="text-green-400">pair programming</strong> sessions, improving team coding and debugging abilities.
+                </li>
+                <li>
+                  Learned <strong className="text-green-400">SQL</strong> and developed a basic <strong className="text-green-400">Database Management System</strong> project using Python and MySQL, applying CRUD operations and schema design.
+                </li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
   </section>
   );
 };

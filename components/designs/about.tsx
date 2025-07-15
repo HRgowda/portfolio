@@ -23,21 +23,28 @@ export function About() {
         </h2>
         <Card className="text-white/80 p-8 backdrop-blur-sm rounded-xl bg-white/5 border-white/10 hover:border-white/20 transition-colors duration-300 hover:shadow-md hover:shadow-white">
           <p className="text-lg text-white leading-relaxed">
-            Hi, I’m <strong>Hemanth R</strong>, a passionate <strong className="text-green-400 font-medium">Full Stack Developer</strong> and a pre-final-year student pursuing <strong>B.E. in Information Science and Engineering</strong> at <strong>Don Bosco Institute of Technology</strong>.
-            I’m actively seeking <u>internship opportunities</u> (remote or on-site) to apply and enhance my skills.
+            Hi, I’m <strong>Hemanth R</strong>, a dedicated <strong className="text-green-400 font-medium">Full Stack Developer</strong> and Final Year student pursuing <strong>B.E. in Information Science and Engineering</strong> at <strong>Don Bosco Institute of Technology</strong>.
+            I’m currently interning as a <strong className="text-green-400 font-medium">Full Stack Developer</strong> at <strong>Butter Money</strong>, where I help build scalable, real-world fintech applications.
+            I thrive on solving complex problems, love building applications from the ground up, and actively contribute to open-source projects. I'm driven by a passion for learning, curiosity, and a mindset that embraces challenges as opportunities to grow.
           </p>
+
           <Separator className="my-6 bg-white/10" />
+
           <p className="text-lg text-white leading-relaxed">
-            My expertise lies in building scalable web applications with a focus on seamless user experiences and efficient backend operations. I’ve also incorporated <strong className="text-green-400 font-medium">DevOps practices</strong> into major projects to streamline workflows. Some of my notable projects include <Link href="https://tapngo-userapp.hemanthr.tech" target="_blank" className="text-green-400 cursor-pointer">
-              TapNGo 
-            </Link>
-             (a secure financial app), 
-            <Link href="https://taskforge.hemanthr.tech" target="_blank" className="text-green-400"> TaskFoge</Link>  (automate bounty distribution for GitHub issues.)
-            <Link href="https://reposphere.hemanthr.tech" target="_blank" className="text-green-400"> RepoSphere</Link> (an AI-powered SaaS solution for GitHub optimization).
+            My core strengths lie in architecting full-stack web applications with a sharp focus on user experience, performance, and maintainability. I’ve also adopted <strong className="text-green-400 font-medium">DevOps practices</strong> to streamline CI/CD pipelines and automate infrastructure across projects.
+            Notable work includes:
+            <br />
+            • <Link href="https://tapngo-userapp.hemanthr.tech" target="_blank" className="text-green-400 cursor-pointer">TapNGo</Link> – A secure financial web app focused on seamless peer-to-peer transfers. <br />
+            • <Link href="https://taskforge.hemanthr.tech" target="_blank" className="text-green-400">TaskForge</Link> – A tool that automates bounty distribution for GitHub issues, improving transparency and team productivity. <br />
+            • <span className="text-green-400">CampusConnect</span> – (In Progress) A platform designed to streamline campus collaboration, event coordination, and peer networking among students.
+
           </p>
+
           <Separator className="my-6 bg-white/10" />
+
           <p className="text-lg text-white leading-relaxed">
-            I am highly enthusiastic about exploring <strong className="text-green-400 font-medium">Machine Learning</strong> and integrating it into future projects. With every opportunity, I aim to deliver innovative solutions that make a meaningful impact. Let’s connect and create something extraordinary! 🚀
+            I’m deeply curious about emerging technologies, especially <strong className="text-green-400 font-medium">Machine Learning</strong>, and aim to integrate intelligent systems into future products. I strongly believe in building with purpose — creating tools that are not only functional but meaningful.
+            If you're looking for someone who combines technical skill with real-world problem solving, let’s connect and build something impactful together. 🚀
           </p>
         </Card>
       </motion.div>
