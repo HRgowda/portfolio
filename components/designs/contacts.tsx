@@ -39,7 +39,7 @@ export function Contacts() {
   };
 
   return (
-    <section id="contact" className="flex flex-col justify-center items-center py-20 px-4 text-white">
+    <section id="contact" className="flex flex-col justify-center items-center py-12 px-4 text-white">
       {/* Heading */}
       <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
         Contact Me

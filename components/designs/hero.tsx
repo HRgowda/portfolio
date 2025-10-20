@@ -7,8 +7,11 @@ import { FiArrowDown } from "react-icons/fi";
 export function scrollToAbout() {
   const id = document.getElementById("about");
   if (id) {
-    id.scrollIntoView({
-      behavior: "smooth",
+    const headerHeight = 80; // Account for fixed header height
+    const elementPosition = id.offsetTop - headerHeight;
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
     });
   }
 }
@@ -147,12 +150,22 @@ export function Hero() {
             <FiArrowDown className="ml-2 text-xl sm:text-2xl" />
           </Link>
 
-          <Link
-            href="#projects"
+          <button
+            onClick={() => {
+              const element = document.getElementById("experience");
+              if (element) {
+                const headerHeight = 80;
+                const elementPosition = element.offsetTop - headerHeight;
+                window.scrollTo({
+                  top: elementPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}  
             className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg font-semibold rounded-full border border-gray-300/20 text-white hover:shadow-white shadow-sm backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
           >
             View My Work
-          </Link>
+          </button>
         </motion.div>
       </div>
 

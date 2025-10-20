@@ -36,7 +36,7 @@ export function Education() {
 
   return (
     <>
-      <section id="education" className="py-22 px-4 md:px-8 relative overflow-hidden">
+      <section id="education" className="py-8 px-4 md:px-8 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />

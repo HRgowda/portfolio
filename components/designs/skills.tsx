@@ -78,15 +78,19 @@ const skillsData: SkillCategory[] = [
 const scrollToProject = (): void => {
   const id = document.getElementById('projects');
   if (id) {
-    id.scrollIntoView({
-      behavior: 'smooth',
+    const headerHeight = 80; // Account for fixed header height
+    const elementPosition = id.offsetTop - headerHeight;
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
     });
   }
 };
 
 export function Skills() {
   return (
-    <section id="skills" className="max-w-6xl mx-auto shadow-xl rounded-2xl overflow-hidden p-6 bg-black">
+    <section id="skills" className="py-8 px-4 md:px-8">
+      <div className="max-w-6xl mx-auto shadow-xl rounded-2xl overflow-hidden p-6 bg-black">
       <h2 className="mt-8 text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">My Skills</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -171,6 +175,7 @@ export function Skills() {
           <span>See Projects</span>
           <FiArrowDown />
         </button>
+      </div>
       </div>
     </section>
   );

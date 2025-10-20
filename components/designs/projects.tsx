@@ -51,7 +51,7 @@ export function Project() {
 
   return (
     <>
-      <section id="projects" className="py-28 px-4 md:px-8 relative overflow-hidden">
+      <section id="projects" className="py-12 px-4 md:px-8 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative">
           <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
             Featured Projects
