@@ -17,7 +17,7 @@ export function scrollToAbout() {
 }
 
 export function Hero() {
-  const domains: string[] = ["Full Stack Developer", "DevOps Engineer", "ML Enthusiast"];
+  const domains: string[] = ["Full Stack Developer", "DevOps & ML Enthusiast"];
   const [animate, setAnimateClass] = useState<string>("");
   const [currentWordIndex, setCurrentWordIndex] = useState<number>(0);
 
