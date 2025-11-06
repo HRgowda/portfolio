@@ -23,8 +23,8 @@ export function About() {
         </h2>
         <Card className="text-white/80 p-8 backdrop-blur-sm rounded-xl bg-white/5 border-white/10 hover:border-white/20 transition-colors duration-300 hover:shadow-md hover:shadow-white">
           <p className="text-lg text-white leading-relaxed">
-            Hi, I’m <strong>Hemanth R</strong>, a dedicated <strong className="text-green-400 font-medium">Full Stack Developer</strong> and Final Year student pursuing <strong>B.E. in Information Science and Engineering</strong> at <strong>Don Bosco Institute of Technology</strong>.
-            I’m currently interning as a <strong className="text-green-400 font-medium">Full Stack Developer</strong> at <strong>Butter Money</strong>, where I help build scalable, real-world fintech applications.
+            Hi, I'm <strong>Hemanth R</strong>, a dedicated <strong className="text-green-400 font-medium">Full Stack Developer</strong> and Final Year student pursuing <strong>B.E. in Information Science and Engineering</strong> at <strong>Don Bosco Institute of Technology</strong> <span className="text-sm text-white/60">(2022-2026)</span>.
+            I'm currently interning as a <strong className="text-green-400 font-medium">Full Stack Developer</strong> at <strong>Butter Money</strong>, where I help build scalable, real-world fintech applications.
             I thrive on solving complex problems, love building applications from the ground up, and actively contribute to open-source projects. I'm driven by a passion for learning, curiosity, and a mindset that embraces challenges as opportunities to grow.
           </p>
 

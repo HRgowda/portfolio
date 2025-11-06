@@ -25,24 +25,39 @@ export const experiences: Experience[] = [
     end: "Present",
     sections: [
       {
-        title: "UI/UX Optimization and Performance",
+        title: "Channel Partner Platform Development",
         bullets: [
-          "Spearheaded a full-scale responsive redesign of the company website using React, Tailwind CSS, and shadcn/ui, improving cross-device usability and boosting user retention by 25%.",
-          "Developed a custom image optimization script at build time, reducing asset sizes by 96% (from 10MB to under 400KB) and boosting page load speeds by 2.5×.",
+          "Engineered a complete Channel Partner Sales Agent module (front-end and back-end), enabling secure registration, lead creation and tracking, and real-time monitoring of customer loan applications.",
+          "Designed scalable data models and role-based authentication that improved operational efficiency and increased qualified lead intake.",
+          "Integrated Zoho CRM automation to sync newly generated leads with detailed customer metadata, eliminating manual data entry and accelerating sales team follow-ups.",
         ],
       },
       {
-        title: "Internal Automation Tool",
+        title: "Customer Onboarding & Document Automation",
         bullets: [
-          "Built an internal document processing tool using Next.js (frontend), Tailwind CSS, shadcn/ui, and FastAPI (backend), reducing manual processing time from 35–40 minutes to under 5 minutes.",
-          "Implemented secure cookie-based authentication to restrict tool access to internal staff and maintain session integrity.",
+          "Contributed to a high-impact onboarding flow for real loan customers with document uploads, validation, and end-to-end editing support.",
+          "Built Slack automation delivering customer documents and statuses directly to internal teams, integrated with v2 of our document processor for faster handling and compliance.",
+        ],
+      },
+      {
+        title: "Admin/Ops Dashboard & Workflow Optimization",
+        bullets: [
+          "Developed a centralized dashboard for internal teams to manage loan journeys, customers, and channel partners.",
+          "Reduced document processing time from 40 minutes to under 5 minutes (87% improvement).",
+        ],
+      },
+      {
+        title: "Eligibility Flow & UI/UX Performance",
+        bullets: [
+          "Spearheaded the Eligibility module, implementing precise input validation and eligibility checks based on customer personal and income details to ensure accurate loan qualification decisions.",
+          "Developed a build-time image optimization engine that reduced asset sizes by 96% (10MB → 400KB), improving load speed by 2.5x.",
         ],
       },
       {
         title: "SEO and Analytics Integration",
         bullets: [
-          "Enhanced SEO by optimizing robots.txt and implementing dynamic sitemap.xml, resulting in Lighthouse SEO scores of 91–100.",
-          "Integrated PostHog for user behavior tracking and funnel analytics, improving conversion analysis by 30%.",
+          "Implemented dynamic robots.txt and sitemap.xml, achieving 91–100 Lighthouse SEO scores.",
+          "Integrated PostHog for user tracking and funnels, boosting conversion analytics by 30%.",
         ],
       },
     ],

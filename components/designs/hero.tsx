@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
-import { FiArrowDown } from "react-icons/fi";
+import { FiArrowDown, FiExternalLink } from "react-icons/fi";
 
 export function scrollToAbout() {
   const id = document.getElementById("about");
@@ -141,13 +141,13 @@ export function Hero() {
           className="pt-4 flex flex-col sm:flex-row gap-6 justify-center"
         >
           <Link
-            href="/Hemanth_R.pdf"
+            href="/Hemanth.R.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
-            Download Resume
-            <FiArrowDown className="ml-2 text-xl sm:text-2xl" />
+            View Resume
+            <FiExternalLink className="ml-2 text-xl sm:text-2xl" />
           </Link>
 
           <button
