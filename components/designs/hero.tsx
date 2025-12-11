@@ -17,7 +17,7 @@ export function scrollToAbout() {
 }
 
 export function Hero() {
-  const domains: string[] = ["Full Stack Developer", "DevOps & ML Enthusiast"];
+  const domains: string[] = ["Software Developer", "Cloud & ML Enthusiast"];
   const [animate, setAnimateClass] = useState<string>("");
   const [currentWordIndex, setCurrentWordIndex] = useState<number>(0);
 
@@ -116,14 +116,14 @@ export function Hero() {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href={process.env.NEXT_PUBLIC_LEETCODE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-orange-500 transition-transform duration-300 hover:scale-125"
           >
             <FaCode />
-          </a>
+          </a> */}
           <a
             href={process.env.NEXT_PUBLIC_MEDIUM_URL}
             target="_blank"
